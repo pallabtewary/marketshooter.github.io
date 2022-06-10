@@ -199,7 +199,6 @@
     .sticky-top.navbar .navbar-brand h6 {
         color: var(--primary);
     }
-
     .navbar .nav-item .dropdown-menu {
         display: block;
         visibility: hidden;
@@ -234,12 +233,14 @@
     border-radius: 40px;
     width: 700px;
     height: auto;
+    max-width: 90%;
 }
 
 .img2-discover {
     border-radius: 40px;
     width: 600px;
     height: auto;
+    max-width: 90%;
 }
 .page-header {
     margin-bottom: 6rem;
@@ -393,7 +394,11 @@
     border: 1px solid var(--primary);
 }
 
-
+/*** Support ***/
+.form-control:focus {
+    border-color: #0e2e50;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(14,46,80);
+  }
 /*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
