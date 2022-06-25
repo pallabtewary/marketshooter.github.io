@@ -5,15 +5,13 @@ document.write(`
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, Medinipur</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+91 12 345 67890</p>
                         <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p><i class="fab fa-telegram me-3"></i>@marketshooterfx</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://instagram.com/market__shooter?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://telegram.me/marketshooterglobaltrading"><i class="fab fa-telegram"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
