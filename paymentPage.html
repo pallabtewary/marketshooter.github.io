@@ -44,14 +44,15 @@
             <script src="js/jsHTMLFiles/navbar.js"></script>
             <div class="container-xxl page-header" style="background-color:#0e2e50;">
                 <div class="container text-center">
-                    <h1 class="text-white animated zoomIn mb-3">Complete Your Payment <img src="img/payment1.png"class="wow zoomIn" data-wow-delay="0.1s" style="width: 20%;"></h1>
+                    <h1 class="text-white animated zoomIn mb-3">Complete Your Payment <img src="img/payment1.png"
+                            class="wow zoomIn" data-wow-delay="0.1s" style="width: 20%;"></h1>
                     <nav aria-label="breadcrumb">
                         <!-- <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><img src="img/payment.png"class="wow zoomIn" data-wow-delay="0.1s" style="width: 40%;"></li>
                         </ol> -->
                     </nav>
                 </div>
-                
+
             </div>
         </div>
         <!-- Navbar & Hero End -->
@@ -61,18 +62,22 @@
             <div class="container">
                 <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <div class="d-inline-block border rounded-pill px-4 mb-3" style="color: #4b7eb5;">Payment</div>
-                    <h4 class="mb-4">To join our courses please complete the payment in any of the following payment modes.</h4>
-                    
-                        <ul class="deals" style="text-align: left;list-style-type: none;">
-                            <li><i class="fa fa-lg fa-check-circle mr-2" style="color: #0e2e50;"></i>  For those who have Intermediate knowledge in SMC - <b>Pay £ 99/month </b></li>
-                            <li><i class="fa fa-lg fa-check-circle mr-2" style="color: #0e2e50;"></i>  Comprehensive Training Weekly basis for 3 months - <b>Pay £ 599 </b></li>
-                            
-                        </ul>
-                        <p class="mb-0">For more details see <a href="courses.html"
+                    <h4 class="mb-4">To join our courses please complete the payment in any of the following payment
+                        modes.</h4>
+
+                    <ul class="deals" style="text-align: left;list-style-type: none;">
+                        <li><i class="fa fa-lg fa-check-circle mr-2" style="color: #0e2e50;"></i> For those who have
+                            Intermediate knowledge in SMC - <b>Pay £ 99/month </b></li>
+                        <li><i class="fa fa-lg fa-check-circle mr-2" style="color: #0e2e50;"></i> Comprehensive Training
+                            Weekly basis for 3 months - <b>Pay £ 599 </b></li>
+
+                    </ul>
+                    <p class="mb-0">For more details see <a href="courses.html"
                             class="btn btn-outline-dark rounded-pill border-2 animated slideInRight">Our
                             Courses</a> <br>After successful payment upload the payment screenshot.</p>
-                        <p class="mb-5" style="color: red;">Note: Transaction id should be visible clearly in the Screenshot.</p>
-                    
+                    <p class="mb-5" style="color: red;">Note: Transaction id should be visible clearly in the
+                        Screenshot.</p>
+
                 </div>
                 <div class="row justify-content-center">
 
@@ -137,7 +142,8 @@
                         <div class="contact-form wow fadeIn" data-wow-delay="0.4s">
                             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s"
                                 style="max-width: 600px;">
-                                <div class="d-inline-block border rounded-pill px-4 mb-3" style="color: #4b7eb5;">Upload Payment Screenshot</div>
+                                <div class="d-inline-block border rounded-pill px-4 mb-3" style="color: #4b7eb5;">Upload
+                                    Payment Screenshot</div>
                             </div>
                             <form onsubmit="sendEmail(); reset(); return false">
                                 <div class="row g-3">
@@ -157,29 +163,30 @@
                                     </div> -->
                                     <div class="col-md-12">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email" title="Please enter your valid Email id"
-                                                required>
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                                title="Please enter your valid Email id" required>
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="telegram-id" placeholder="Your Telegram Id"
-                                                title="Please enter your telegram id">
+                                            <input type="text" class="form-control" id="telegram-id"
+                                                placeholder="Your Telegram Id" title="Please enter your telegram id">
                                             <label for="phone">Your Telegram id</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-floating">
-                                            <input type="file" class="form-control" id="fileupload" placeholder="Payment Screenshot"
-                                                title="Please enter valid phone number" onchange="sendEmail()"  required>
+                                            <input type="file" class="form-control" id="fileupload"
+                                                placeholder="Payment Screenshot" title="Please enter valid phone number"
+                                                required>
                                             <label for="phone">Payment Screenshot</label>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" onclick="sendEmail()"
-                                            style="background-color: #0e2e50;border-color: #0e2e50;" disabled>Upload</button>
+                                        <button class="btn btn-dark w-100 py-3" type="submit"
+                                            style="background-color: #0e2e50;border-color: #0e2e50;">Upload</button>
                                     </div>
                                 </div>
                             </form>
@@ -214,28 +221,31 @@
         var file = event.srcElement.files[0];
         var reader = new FileReader();
         function sendEmail() {
-            var file = event.srcElement.files[0];
-   var reader = new FileReader();
-   reader.readAsBinaryString(file);
-   reader.onload = function () {
-       var dataUri = "data:" + file.type + ";base64," + btoa(reader.result);
-            Email.send({
-                SecureToken : "89798828-a4c8-4616-ac8b-5525b5e7a677",
-                To: 'chakrabortyanirban017@gmail.com',
-                From: "noreply.marketshooter@gmail.com",
-                Subject: "Course Payment Screenshot From "+document.getElementById('name').value,
-                Body: "Name: " + document.getElementById('name').value
-                    + "<br>Email: " + document.getElementById('email').value
-                    + "<br>Telegram Id: " + document.getElementById('telegram-id').value,
-                    Attachments : [
-          	{
-          		name : file.name,
-          		data : dataUri
-          	}]
-            }).then(
-                message => alert("Screenshot uploaded successfully.")
-            );
-        };
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var telegramId = document.getElementById('telegram-id').value;
+            var file = event.srcElement.querySelector('[type="file"]').files[0];
+            var reader = new FileReader();
+            reader.readAsBinaryString(file);
+            reader.onload = function () {
+                var dataUri = "data:" + file.type + ";base64," + btoa(reader.result);
+                Email.send({
+                    SecureToken: "89798828-a4c8-4616-ac8b-5525b5e7a677",
+                    To: 'chakrabortyanirban017@gmail.com',
+                    From: "noreply.marketshooter@gmail.com",
+                    Subject: "Course Payment Screenshot From " + name,
+                    Body: "Name: " + name
+                        + "<br>Email: " + email
+                        + "<br>Telegram Id: " + telegramId,
+                    Attachments: [
+                        {
+                            name: file.name,
+                            data: dataUri
+                        }]
+                }).then(
+                    message => alert("Screenshot uploaded successfully.")
+                );
+            };
         }
     </script>
 
