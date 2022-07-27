@@ -18,16 +18,7 @@ document.write(`
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="courses.html" class="nav-item nav-link">Course</a>
-                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Social</a>
-                     <div class="dropdown-menu m-0">
-                            <a href="feature.html" class="dropdown-item">Features</a>
-                             <a href="quote.html" class="dropdown-item">Free Quote</a>
-                       <a href="team.html" class="dropdown-item">Our Team</a>
-                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                           <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                 </div>
+                 
                     <a href="contact.html" class="nav-item nav-link" id="sup">Support</a>
                 </div>
                 <a href="" class="btn btn-light rounded-pill text-dark py-2 px-4 ms-lg-5">Trade Gallery</a>

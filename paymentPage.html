@@ -185,8 +185,10 @@
                                     </div>
 
                                     <div class="col-12">
-                                        <button class="btn btn-dark w-100 py-3" type="submit"
-                                            style="background-color: #0e2e50;border-color: #0e2e50;">Upload</button>
+                                        <button class="btn btn-dark w-100 py-3" type="submit" id="upload"
+                                            style="background-color: #0e2e50;border-color: #0e2e50;"> <i
+                                                class="fas fa-spinner fa-spin" style="display:none;"></i>
+                                            <span class="btn-text">Upload</span></button>
                                     </div>
                                 </div>
                             </form>
@@ -216,11 +218,15 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
         var file = event.srcElement.files[0];
         var reader = new FileReader();
         function sendEmail() {
+            $(".btn .fa-spinner").show();
+            $(".btn .btn-text").html("Uploading...");
+            document.getElementById("upload").disabled = true;
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var telegramId = document.getElementById('telegram-id').value;
@@ -228,6 +234,7 @@
             var reader = new FileReader();
             reader.readAsBinaryString(file);
             reader.onload = function () {
+                var flag = true;
                 var dataUri = "data:" + file.type + ";base64," + btoa(reader.result);
                 Email.send({
                     SecureToken: "89798828-a4c8-4616-ac8b-5525b5e7a677",
@@ -243,7 +250,27 @@
                             data: dataUri
                         }]
                 }).then(
-                    message => alert("Screenshot uploaded successfully.")
+                    message => Swal.fire({
+                        title: 'Screenshot uploaded successfully!',
+                        text: "press ok to close.",
+                        icon: 'success',
+                        showClass: {
+                            popup: 'animate__animated animate__fadeInDown'
+                        },
+                        hideClass: {
+                            popup: 'animate__animated animate__fadeOutUp'
+                        },
+                        // showCancelButton: true,
+                        confirmButtonColor: '#0e2e50',
+                        // cancelButtonColor: '#d33',
+                        confirmButtonText: 'Ok'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            document.getElementById("upload").disabled = false;
+                            $(".btn .fa-spinner").hide();
+                            $(".btn .btn-text").html("Upload");
+                        }
+                    }),
                 );
             };
         }
