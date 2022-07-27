@@ -67,9 +67,9 @@
 
                     <ul class="deals" style="text-align: left;list-style-type: none;">
                         <li><i class="fa fa-lg fa-check-circle mr-2" style="color: #0e2e50;"></i> For those who have
-                            Intermediate knowledge in SMC - <b>Pay £ 99/month </b></li>
+                            Intermediate knowledge in SMC - <b>Pay £ 49/month </b></li>
                         <li><i class="fa fa-lg fa-check-circle mr-2" style="color: #0e2e50;"></i> Comprehensive Training
-                            Weekly basis for 3 months - <b>Pay £ 599 </b></li>
+                            Weekly basis for <u>Lifetime</u> - <b>Pay £ 599 </b></li>
 
                     </ul>
                     <p class="mb-0">For more details see <a href="courses.html"
@@ -149,7 +149,7 @@
                                 <div class="row g-3">
                                     <div class="col-md-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" title="Please enter your name"
                                                 required>
                                             <label for="name">Your Name</label>
                                         </div>
@@ -178,7 +178,7 @@
                                     <div class="col-md-12">
                                         <div class="form-floating">
                                             <input type="file" class="form-control" id="fileupload"
-                                                placeholder="Payment Screenshot" title="Please enter valid phone number"
+                                                placeholder="Payment Screenshot" title="Choose payment screenshot"
                                                 required>
                                             <label for="phone">Payment Screenshot</label>
                                         </div>
@@ -238,7 +238,7 @@
                 var dataUri = "data:" + file.type + ";base64," + btoa(reader.result);
                 Email.send({
                     SecureToken: "89798828-a4c8-4616-ac8b-5525b5e7a677",
-                    To: 'chakrabortyanirban017@gmail.com',
+                    To: 'pallabtewari618@gmail.com',
                     From: "noreply.marketshooter@gmail.com",
                     Subject: "Course Payment Screenshot From " + name,
                     Body: "Name: " + name
