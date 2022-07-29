@@ -16,23 +16,19 @@ document.write(`
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Quick Link</h5>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="courses.html">Our Courses</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="courses.html">Our Courses</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Write Something about newsletter</p>
+                        <h5 class="text-white mb-4">Ready to get started</h5>
+                        <p>Subscribe to get all the latest updates</p>
                         <div class="position-relative w-100 mt-3">
                             <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
                                 placeholder="Your Email" style="height: 48px;">
@@ -52,10 +48,8 @@ document.write(`
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <a href="index.html">Home</a>
+                                <a href="contact.html">Help</a>
                             </div>
                         </div>
                     </div>
