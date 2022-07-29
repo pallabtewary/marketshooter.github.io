@@ -17,11 +17,10 @@ document.write(`
 
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Course</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
                  
                     <a href="contact.html" class="nav-item nav-link" id="sup">Support</a>
                 </div>
-                <a href="" class="btn btn-light rounded-pill text-dark py-2 px-4 ms-lg-5">Trade Gallery</a>
            </div>
         </nav>
         
