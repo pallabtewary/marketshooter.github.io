@@ -11,7 +11,7 @@ document.write(`
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                             <a class="btn btn-outline-light btn-social" href="https://instagram.com/market__shooter?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://telegram.me/marketshooterglobaltrading"><i class="fab fa-telegram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://telegram.me/marketshooterforex"><i class="fab fa-telegram"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
