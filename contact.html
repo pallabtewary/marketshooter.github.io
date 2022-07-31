@@ -202,26 +202,8 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "noreply.marketshooter@gmail.com",
-                Password: "559CFBE459A90381688AEBA42F803AC40A3D",
-                To: 'chakrabortyanirban017@gmail.com',
-                From: "noreply.marketshooter@gmail.com",
-                Subject: "New Contact Form Enquiry",
-                Body: "Name: " + document.getElementById('name').value
-                    + "<br>Email: " + document.getElementById('email').value
-                    + "<br>Subject: " + document.getElementById('subject').value
-                    + "<br>Phone: " + document.getElementById('phone').value
-                    + "<br>Message: " + document.getElementById('message').value
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/functions.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
