@@ -33,7 +33,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="offerVisibility()">
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <script src="js/jsHTMLFiles/spinner.js"></script>
@@ -108,15 +108,17 @@
                             <div class="price-header">
                                 <h3 class="title">Market Shooter</h3>
                             </div>
-                            <div class="price-value"><span
+                            <div class="price-value"><span id="offer"
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                                     style="z-index: 12;">
                                     Flat £200 off <br>
                                     <p class="blink" style="margin-bottom: 0;">Valid till 31st August</p>
                                 </span>
                                 <div class="value">
-                                    <span class="currency">£</span> <span class="amount">399.<span>00</span></span>
-                                    <span class="month"
+                                    <span class="currency">£</span> <span id="offer-price"
+                                        class="amount">399.<span>00</span></span><span id="price" class="amount"
+                                        style="display: none;">599.<span>00</span></span></span>
+                                    <span class="month" id="old-price"
                                         style="color: gray;font-weight:1;font-size: 20px;margin-left: 20px;"><s>£
                                             599.00</s></span>
 
@@ -259,6 +261,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/functions.js"></script>
     <script>
 
         function readMore() {

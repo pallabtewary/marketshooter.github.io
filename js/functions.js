@@ -95,3 +95,13 @@ function copyToClipboard(element, copyIcon, copiedIcon) {
         }
     })
 }
+
+function offerVisibility(){
+    var currentDate = new Date();
+    if(currentDate.getTime() > new Date("2022-08-31").getTime()){
+    $("#offer").hide();
+    $("#offer-price").hide();
+    $("#old-price").hide();
+    $("#price").show();
+    }
+}

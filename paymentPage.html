@@ -33,7 +33,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="offerVisibility()">
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <script src="js/jsHTMLFiles/spinner.js"></script>
@@ -69,10 +69,10 @@
                         <li><i class="fa fa-lg fa-check-circle mr-2" style="color: #0e2e50;"></i> For those who have
                             Intermediate knowledge in SMC - <b>Pay £ 200 for Lifetime</b></li>
                         <li><i class="fa fa-lg fa-check-circle mr-2" style="color: #0e2e50;"></i> Comprehensive Training
-                            for <u>Lifetime</u> - <b>Pay £ 399 </b> <span
+                            for <u>Lifetime</u> - <b>Pay £ <span id="offer-price">399</span><span id="price"
+                                    style="display: none;">599</span> </b> <span id="old-price"
                                 style="font-size: 15px;color: gray;text-decoration: line-through;">£ 599</span><span
-                                class="badge bg-danger"
-                                style="margin-left: 5px;margin-top: 15px;">
+                                id="offer" class="badge bg-danger" style="margin-left: 5px;margin-top: 15px;">
                                 Flat £200 off/- <br>
                                 <p class="blink" style="margin-bottom: 0;">Valid till 31st August</p>
                             </span> </span></li>
